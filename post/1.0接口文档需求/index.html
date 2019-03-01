@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+
+<link rel="canonical" href="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>1.0接口文档需求 - RexLiu&#39;s Blog</title>
+    
+<meta name="description" content="1.0接口文档需求 接口文档 简要描述： 用户注册接口  请求URL： - http://xx.com/api/user/register请求方式： - POST参数：   参数名 必选 类型 说明     username 是 string 用户名   password 是 string 密码   name 否 string 昵称    返回示例{ &amp;quot;error_code&amp;quot;: 0, &amp;quot;data&amp;quot;: { &amp;quot;uid&amp;quot;: &amp;quot;1&amp;quot;, &amp;quot;username&amp;quot;: &amp;quot;12154545&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;吴系挂&amp;quot;, &amp;quot;groupid&amp;quot;: 2 , &amp;quot;reg_time&amp;quot;: &amp;quot;1436864169&amp;quot;, &amp;quot;last_login_time&amp;quot;: &amp;quot;0&amp;quot;, } }  返回参数说明   参数名 类型 说明     groupid int 用户组id，1：超级管理员；2：普通用户    备注">
+
+<meta property="og:title" content="1.0接口文档需求 - RexLiu&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/">
+<meta property="og:image" content="https://rexliu2018.github.io/images/default.png">
+<meta property="og:site_name" content="RexLiu&#39;s Blog">
+<meta property="og:description" content="1.0接口文档需求 接口文档 简要描述： 用户注册接口  请求URL： - http://xx.com/api/user/register请求方式： - POST参数：   参数名 必选 类型 说明     username 是 string 用户名   password 是 string 密码   name 否 string 昵称    返回示例{ &amp;quot;error_code&amp;quot;: 0, &amp;quot;data&amp;quot;: { &amp;quot;uid&amp;quot;: &amp;quot;1&amp;quot;, &amp;quot;username&amp;quot;: &amp;quot;12154545&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;吴系挂&amp;quot;, &amp;quot;groupid&amp;quot;: 2 , &amp;quot;reg_time&amp;quot;: &amp;quot;1436864169&amp;quot;, &amp;quot;last_login_time&amp;quot;: &amp;quot;0&amp;quot;, } }  返回参数说明   参数名 类型 说明     groupid int 用户组id，1：超级管理员；2：普通用户    备注">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="RexLiu&#39;s Blog">
+<meta name="twitter:url" content="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/">
+<meta name="twitter:title" content="1.0接口文档需求 - RexLiu&#39;s Blog">
+<meta name="twitter:description" content="1.0接口文档需求 接口文档 简要描述： 用户注册接口  请求URL： - http://xx.com/api/user/register请求方式： - POST参数：   参数名 必选 类型 说明     username 是 string 用户名   password 是 string 密码   name 否 string 昵称    返回示例{ &amp;quot;error_code&amp;quot;: 0, &amp;quot;data&amp;quot;: { &amp;quot;uid&amp;quot;: &amp;quot;1&amp;quot;, &amp;quot;username&amp;quot;: &amp;quot;12154545&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;吴系挂&amp;quot;, &amp;quot;groupid&amp;quot;: 2 , &amp;quot;reg_time&amp;quot;: &amp;quot;1436864169&amp;quot;, &amp;quot;last_login_time&amp;quot;: &amp;quot;0&amp;quot;, } }  返回参数说明   参数名 类型 说明     groupid int 用户组id，1：超级管理员；2：普通用户    备注">
+<meta name="twitter:image" content="https://rexliu2018.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://rexliu2018.github.io/"
+    },
+    "headline": "1.0接口文档需求 - RexLiu&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://rexliu2018.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-02-22T18:01:00JST",
+    "dateModified": "2019-02-22T18:01:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "RexLiu&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RexLiu&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rexliu2018.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "1.0接口文档需求 接口文档 简要描述：
+ 用户注册接口  请求URL： - http://xx.com/api/user/register
+请求方式： - POST
+参数：
+   参数名 必选 类型 说明     username 是 string 用户名   password 是 string 密码   name 否 string 昵称    返回示例
+{ &quot;error_code&quot;: 0, &quot;data&quot;: { &quot;uid&quot;: &quot;1&quot;, &quot;username&quot;: &quot;12154545&quot;, &quot;name&quot;: &quot;吴系挂&quot;, &quot;groupid&quot;: 2 , &quot;reg_time&quot;: &quot;1436864169&quot;, &quot;last_login_time&quot;: &quot;0&quot;, } }  返回参数说明
+   参数名 类型 说明     groupid int 用户组id，1：超级管理员；2：普通用户    备注"
+  }
+</script>
+
+
+    <link href="https://rexliu2018.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://rexliu2018.github.io/">RexLiu&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://rexliu2018.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://rexliu2018.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">1.0接口文档需求</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-02-22T18:01:00JST">Feb 22, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://rexliu2018.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">1.0接口文档需求</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h1 id="1-0接口文档需求">1.0接口文档需求</h1>
+
+<h2 id="接口文档">接口文档</h2>
+
+<p><strong>简要描述：</strong></p>
+
+<ul>
+<li>用户注册接口</li>
+</ul>
+
+<p><strong>请求URL：</strong>
+- <code>http://xx.com/api/user/register</code></p>
+
+<p><strong>请求方式：</strong>
+- POST</p>
+
+<p><strong>参数：</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">参数名</th>
+<th align="left">必选</th>
+<th align="left">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">username</td>
+<td align="left">是</td>
+<td align="left">string</td>
+<td>用户名</td>
+</tr>
+
+<tr>
+<td align="left">password</td>
+<td align="left">是</td>
+<td align="left">string</td>
+<td>密码</td>
+</tr>
+
+<tr>
+<td align="left">name</td>
+<td align="left">否</td>
+<td align="left">string</td>
+<td>昵称</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回示例</strong></p>
+
+<pre><code class="language-json">  {
+    &quot;error_code&quot;: 0,
+    &quot;data&quot;: {
+      &quot;uid&quot;: &quot;1&quot;,
+      &quot;username&quot;: &quot;12154545&quot;,
+      &quot;name&quot;: &quot;吴系挂&quot;,
+      &quot;groupid&quot;: 2 ,
+      &quot;reg_time&quot;: &quot;1436864169&quot;,
+      &quot;last_login_time&quot;: &quot;0&quot;,
+    }
+  }
+</code></pre>
+
+<p><strong>返回参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">参数名</th>
+<th align="left">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">groupid</td>
+<td align="left">int</td>
+<td>用户组id，1：超级管理员；2：普通用户</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>备注</strong></p>
+
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/" class="list-group-item">7.0利用GitHub Pages创建Blog</a>
+      
+      <a href="https://rexliu2018.github.io/post/6.0tomcat9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="list-group-item">6.0Tomcat9安装配置</a>
+      
+      <a href="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/" class="list-group-item">5.0Tomcat和Servlet</a>
+      
+      <a href="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/" class="list-group-item">4.0表格</a>
+      
+      <a href="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/" class="list-group-item">3.0Markdown语法</a>
+      
+      <a href="https://rexliu2018.github.io/post/2.0%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%9C%80%E6%B1%82/" class="list-group-item">2.0数据字典需求</a>
+      
+      <a href="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/" class="list-group-item">1.0接口文档需求</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; RexLiu&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

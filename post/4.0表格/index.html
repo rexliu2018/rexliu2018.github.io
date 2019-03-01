@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+
+<link rel="canonical" href="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>4.0表格 - RexLiu&#39;s Blog</title>
+    
+<meta name="description" content="4.0表格 十四、表格 表头&#43;表分割线&#43;表数据 即可生成一个表第二行 表分割线 分割表头和表数据- 语法：表一： | col 1 | col 2 | col 3 | | --- | --- | --- | | cell1 | cell2 | cell3 | | cell4 | cell5 | cell6 |  有一个-就行，为了 对齐，多加了几个，注意中间必须连贯不能有空格。文字默认居右对齐- 两边加: 表示文字居中- 右边加: 表示文字居右- 左边加: 表示文字居左表二： |字段|类型|空|默认|注释| |:---- |:------- |:--- |---|------ | |uid |int(10) |否 | | | |username |varchar(20) |否 | | 用户名 | |password |varchar(50) |否 | | 密码 | |name |varchar(15) |是 | | 昵称 | |reg_time |int(11) |否 | 0 | 注册时间 |   显示：">
+
+<meta property="og:title" content="4.0表格 - RexLiu&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/">
+<meta property="og:image" content="https://rexliu2018.github.io/images/default.png">
+<meta property="og:site_name" content="RexLiu&#39;s Blog">
+<meta property="og:description" content="4.0表格 十四、表格 表头&#43;表分割线&#43;表数据 即可生成一个表第二行 表分割线 分割表头和表数据- 语法：表一： | col 1 | col 2 | col 3 | | --- | --- | --- | | cell1 | cell2 | cell3 | | cell4 | cell5 | cell6 |  有一个-就行，为了 对齐，多加了几个，注意中间必须连贯不能有空格。文字默认居右对齐- 两边加: 表示文字居中- 右边加: 表示文字居右- 左边加: 表示文字居左表二： |字段|类型|空|默认|注释| |:---- |:------- |:--- |---|------ | |uid |int(10) |否 | | | |username |varchar(20) |否 | | 用户名 | |password |varchar(50) |否 | | 密码 | |name |varchar(15) |是 | | 昵称 | |reg_time |int(11) |否 | 0 | 注册时间 |   显示：">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="RexLiu&#39;s Blog">
+<meta name="twitter:url" content="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/">
+<meta name="twitter:title" content="4.0表格 - RexLiu&#39;s Blog">
+<meta name="twitter:description" content="4.0表格 十四、表格 表头&#43;表分割线&#43;表数据 即可生成一个表第二行 表分割线 分割表头和表数据- 语法：表一： | col 1 | col 2 | col 3 | | --- | --- | --- | | cell1 | cell2 | cell3 | | cell4 | cell5 | cell6 |  有一个-就行，为了 对齐，多加了几个，注意中间必须连贯不能有空格。文字默认居右对齐- 两边加: 表示文字居中- 右边加: 表示文字居右- 左边加: 表示文字居左表二： |字段|类型|空|默认|注释| |:---- |:------- |:--- |---|------ | |uid |int(10) |否 | | | |username |varchar(20) |否 | | 用户名 | |password |varchar(50) |否 | | 密码 | |name |varchar(15) |是 | | 昵称 | |reg_time |int(11) |否 | 0 | 注册时间 |   显示：">
+<meta name="twitter:image" content="https://rexliu2018.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://rexliu2018.github.io/"
+    },
+    "headline": "4.0表格 - RexLiu&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://rexliu2018.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-02-25T18:01:00JST",
+    "dateModified": "2019-02-25T18:01:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "RexLiu&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RexLiu&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rexliu2018.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "4.0表格 十四、表格 表头+表分割线+表数据 即可生成一个表
+第二行 表分割线 分割表头和表数据
+- 语法：
+表一： | col 1 | col 2 | col 3 | | --- | --- | --- | | cell1 | cell2 | cell3 | | cell4 | cell5 | cell6 |  有一个-就行，为了 对齐，多加了几个，注意中间必须连贯不能有空格。
+文字默认居右对齐
+- 两边加: 表示文字居中
+- 右边加: 表示文字居右
+- 左边加: 表示文字居左
+表二： |字段|类型|空|默认|注释| |:---- |:------- |:--- |---|------ | |uid |int(10) |否 | | | |username |varchar(20) |否 | | 用户名 | |password |varchar(50) |否 | | 密码 | |name |varchar(15) |是 | | 昵称 | |reg_time |int(11) |否 | 0 | 注册时间 |   显示："
+  }
+</script>
+
+
+    <link href="https://rexliu2018.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://rexliu2018.github.io/">RexLiu&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://rexliu2018.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://rexliu2018.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">4.0表格</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-02-25T18:01:00JST">Feb 25, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://rexliu2018.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">4.0表格</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h1 id="4-0表格">4.0表格</h1>
+
+<h2 id="十四-表格">十四、表格</h2>
+
+<p>表头+表分割线+表数据 即可生成一个表<br />
+第二行 表分割线 分割表头和表数据<br />
+- 语法：</p>
+
+<pre><code class="language-md">表一：
+| col 1 | col 2 | col 3 |
+| --- | --- | --- |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+</code></pre>
+
+<p>有一个<code>-</code>就行，为了 对齐，多加了几个，注意中间必须连贯不能有空格。<br />
+文字默认居右对齐<br />
+<code>-</code> 两边加<code>:</code> 表示文字居中<br />
+<code>-</code> 右边加<code>:</code> 表示文字居右<br />
+<code>-</code> 左边加<code>:</code> 表示文字居左</p>
+
+<pre><code class="language-md">表二：  
+|字段|类型|空|默认|注释|
+|:----    |:-------    |:--- |---|------      |
+|uid    |int(10)     |否 |  |             |
+|username |varchar(20) |否 |    |   用户名  |
+|password |varchar(50) |否   |    |   密码    |
+|name     |varchar(15) |是   |    |    昵称     |
+|reg_time |int(11)     |否   | 0  |   注册时间  |
+</code></pre>
+
+<ul>
+<li>显示：<br />
+表一：<br />
+<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>col 1</th>
+<th>col 2</th>
+<th>col 3</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cell1</td>
+<td>cell2</td>
+<td>cell3</td>
+</tr>
+
+<tr>
+<td>cell4</td>
+<td>cell5</td>
+<td>cell6</td>
+</tr>
+</tbody>
+</table>
+
+<p>表二：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">字段</th>
+<th align="left">类型</th>
+<th align="left">空</th>
+<th>默认</th>
+<th>注释</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="left">int(10)</td>
+<td align="left">否</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">username</td>
+<td align="left">varchar(20)</td>
+<td align="left">否</td>
+<td></td>
+<td>用户名</td>
+</tr>
+
+<tr>
+<td align="left">password</td>
+<td align="left">varchar(50)</td>
+<td align="left">否</td>
+<td></td>
+<td>密码</td>
+</tr>
+
+<tr>
+<td align="left">name</td>
+<td align="left">varchar(15)</td>
+<td align="left">是</td>
+<td></td>
+<td>昵称</td>
+</tr>
+
+<tr>
+<td align="left">reg_time</td>
+<td align="left">int(11)</td>
+<td align="left">否</td>
+<td>0</td>
+<td>注册时间</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/" class="list-group-item">7.0利用GitHub Pages创建Blog</a>
+      
+      <a href="https://rexliu2018.github.io/post/6.0tomcat9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="list-group-item">6.0Tomcat9安装配置</a>
+      
+      <a href="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/" class="list-group-item">5.0Tomcat和Servlet</a>
+      
+      <a href="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/" class="list-group-item">4.0表格</a>
+      
+      <a href="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/" class="list-group-item">3.0Markdown语法</a>
+      
+      <a href="https://rexliu2018.github.io/post/2.0%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%9C%80%E6%B1%82/" class="list-group-item">2.0数据字典需求</a>
+      
+      <a href="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/" class="list-group-item">1.0接口文档需求</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; RexLiu&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

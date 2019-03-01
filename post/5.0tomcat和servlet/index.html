@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+
+<link rel="canonical" href="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>5.0Tomcat和Servlet - RexLiu&#39;s Blog</title>
+    
+<meta name="description" content="5.0Tomcat和Servlet 目录 [toc]一、Tomcat版本    Tomcat version Servlet Spec JSP Spec EL Spec Supported Java Versions     Tomcat 6 Servlet 2.5 JSP 2.1 EL 2.1 JDK 5 and later   Tomcat 7 Servlet 3.0 JSP 2.2 EL 2.2 JDK 6 and later   Tomcat 8 Servlet 3.1 JSP 2.3 EL 3.0 JDK 7 and later   Tomcat 9 Servlet 4.0 JSP 2.">
+
+<meta property="og:title" content="5.0Tomcat和Servlet - RexLiu&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/">
+<meta property="og:image" content="https://rexliu2018.github.io/images/default.png">
+<meta property="og:site_name" content="RexLiu&#39;s Blog">
+<meta property="og:description" content="5.0Tomcat和Servlet 目录 [toc]一、Tomcat版本    Tomcat version Servlet Spec JSP Spec EL Spec Supported Java Versions     Tomcat 6 Servlet 2.5 JSP 2.1 EL 2.1 JDK 5 and later   Tomcat 7 Servlet 3.0 JSP 2.2 EL 2.2 JDK 6 and later   Tomcat 8 Servlet 3.1 JSP 2.3 EL 3.0 JDK 7 and later   Tomcat 9 Servlet 4.0 JSP 2.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="RexLiu&#39;s Blog">
+<meta name="twitter:url" content="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/">
+<meta name="twitter:title" content="5.0Tomcat和Servlet - RexLiu&#39;s Blog">
+<meta name="twitter:description" content="5.0Tomcat和Servlet 目录 [toc]一、Tomcat版本    Tomcat version Servlet Spec JSP Spec EL Spec Supported Java Versions     Tomcat 6 Servlet 2.5 JSP 2.1 EL 2.1 JDK 5 and later   Tomcat 7 Servlet 3.0 JSP 2.2 EL 2.2 JDK 6 and later   Tomcat 8 Servlet 3.1 JSP 2.3 EL 3.0 JDK 7 and later   Tomcat 9 Servlet 4.0 JSP 2.">
+<meta name="twitter:image" content="https://rexliu2018.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://rexliu2018.github.io/"
+    },
+    "headline": "5.0Tomcat和Servlet - RexLiu&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://rexliu2018.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-02-26T18:01:00JST",
+    "dateModified": "2019-02-26T18:01:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "RexLiu&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RexLiu&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rexliu2018.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "5.0Tomcat和Servlet 目录 [toc]
+一、Tomcat版本    Tomcat version Servlet Spec JSP Spec EL Spec Supported Java Versions     Tomcat 6 Servlet 2.5 JSP 2.1 EL 2.1 JDK 5 and later   Tomcat 7 Servlet 3.0 JSP 2.2 EL 2.2 JDK 6 and later   Tomcat 8 Servlet 3.1 JSP 2.3 EL 3.0 JDK 7 and later   Tomcat 9 Servlet 4.0 JSP 2."
+  }
+</script>
+
+
+    <link href="https://rexliu2018.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://rexliu2018.github.io/">RexLiu&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://rexliu2018.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://rexliu2018.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">5.0Tomcat和Servlet</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-02-26T18:01:00JST">Feb 26, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://rexliu2018.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">5.0Tomcat和Servlet</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h1 id="5-0tomcat和servlet">5.0Tomcat和Servlet</h1>
+
+<h2 id="目录">目录</h2>
+
+<p>[toc]</p>
+
+<h2 id="一-tomcat版本">一、Tomcat版本</h2>
+
+<table>
+<thead>
+<tr>
+<th>Tomcat version</th>
+<th>Servlet Spec</th>
+<th>JSP Spec</th>
+<th>EL Spec</th>
+<th>Supported Java Versions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Tomcat 6</td>
+<td>Servlet 2.5</td>
+<td>JSP 2.1</td>
+<td>EL 2.1</td>
+<td>JDK 5 and later</td>
+</tr>
+
+<tr>
+<td>Tomcat 7</td>
+<td>Servlet 3.0</td>
+<td>JSP 2.2</td>
+<td>EL 2.2</td>
+<td>JDK 6 and later</td>
+</tr>
+
+<tr>
+<td>Tomcat 8</td>
+<td>Servlet 3.1</td>
+<td>JSP 2.3</td>
+<td>EL 3.0</td>
+<td>JDK 7 and later</td>
+</tr>
+
+<tr>
+<td>Tomcat 9</td>
+<td>Servlet 4.0</td>
+<td>JSP 2.3</td>
+<td>EL 3.0</td>
+<td>JDK 8 and later</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="二-servlet-2-5-的-web-xml">二、Servlet 2.5 的 web.xml</h2>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;web-app xmlns=&quot;http://java.sun.com/xml/ns/javaee&quot;  
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;  
+         xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/javaee  
+                             http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd&quot;  
+         version=&quot;2.5&quot;&gt;
+&lt;/web-app&gt;
+</code></pre>
+
+<h2 id="三-servlet-3-0-的-web-xml">三、Servlet 3.0 的 web.xml</h2>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;web-app xmlns=&quot;http://java.sun.com/xml/ns/javaee&quot;  
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;  
+         xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/javaee  
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd&quot;  
+         version=&quot;3.0&quot;&gt;
+&lt;/web-app&gt;
+</code></pre>
+
+<h2 id="四-servlet-3-1-的-web-xml">四、Servlet 3.1 的 web.xml</h2>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;  
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;  
+         xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee  
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;  
+         version=&quot;3.1&quot;  
+         metadata-complete=&quot;true&quot;&gt;
+&lt;/web-app&gt;
+</code></pre>
+
+<p>注意：当出现不能识别注解表示的servlet时，删去metadata-complete=&ldquo;true&rdquo;即可<br />
+如果设置metadata-complete=&ldquo;true&rdquo;，会在启动时不扫描注解（annotation）。<br />
+如果不扫描注解的话，用注解进行的配置就无法生效，<br />
+则 @WebServlet 就不生效了。</p>
+
+<h2 id="五-servlet-4-0-的-web-xml">五、Servlet 4.0 的 web.xml</h2>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;  
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;  
+         xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee  
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd&quot;  
+         version=&quot;4.0&quot;&gt;
+         &lt;display-name&gt;website name&lt;/display-name&gt;
+         &lt;welcome-file-list&gt;
+            &lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
+            &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
+         &lt;/welcome-file-list&gt;
+&lt;/web-app&gt;
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/" class="list-group-item">7.0利用GitHub Pages创建Blog</a>
+      
+      <a href="https://rexliu2018.github.io/post/6.0tomcat9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="list-group-item">6.0Tomcat9安装配置</a>
+      
+      <a href="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/" class="list-group-item">5.0Tomcat和Servlet</a>
+      
+      <a href="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/" class="list-group-item">4.0表格</a>
+      
+      <a href="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/" class="list-group-item">3.0Markdown语法</a>
+      
+      <a href="https://rexliu2018.github.io/post/2.0%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%9C%80%E6%B1%82/" class="list-group-item">2.0数据字典需求</a>
+      
+      <a href="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/" class="list-group-item">1.0接口文档需求</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; RexLiu&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

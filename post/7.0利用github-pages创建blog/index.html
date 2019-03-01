@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+
+<link rel="canonical" href="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>7.0利用GitHub Pages创建Blog - RexLiu&#39;s Blog</title>
+    
+<meta name="description" content="7.0利用GitHub Pages创建Blog 目录 [toc]一、新建一个GitHub库 1. 打开 GitHub Pages官网 User or organization site : 个人或组织网站Project site : 项目网站浏览查看 User or organization site 帮助文档，了解操作步骤。2. 注册并登录GitHub 网址：https://github.com/新建一个GitHub repository ，库名为 username.github.io 。username即为你的 GitHub 账号的 username。类型为 Public选中 Initializa this respository with a README二、安装 Hugo 1. 浏览 Hugo 官方帮助文档 了解自己操作系统对应的必要工具。Hugo 安装指南：https://gohugo.io/getting-started/installing/2. 下载跨平台二进版本 下载地址：https://github.com/gohugoio/hugo/releaseshugo_0.54.0_Windows-64bit.ziphugo_extended_0.54.0_Windows-64bit.zip3. 完成安装 hugo version4. 新建一个Hugo网站 建立文件夹cd ./blog">
+
+<meta property="og:title" content="7.0利用GitHub Pages创建Blog - RexLiu&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/">
+<meta property="og:image" content="https://rexliu2018.github.io/images/default.png">
+<meta property="og:site_name" content="RexLiu&#39;s Blog">
+<meta property="og:description" content="7.0利用GitHub Pages创建Blog 目录 [toc]一、新建一个GitHub库 1. 打开 GitHub Pages官网 User or organization site : 个人或组织网站Project site : 项目网站浏览查看 User or organization site 帮助文档，了解操作步骤。2. 注册并登录GitHub 网址：https://github.com/新建一个GitHub repository ，库名为 username.github.io 。username即为你的 GitHub 账号的 username。类型为 Public选中 Initializa this respository with a README二、安装 Hugo 1. 浏览 Hugo 官方帮助文档 了解自己操作系统对应的必要工具。Hugo 安装指南：https://gohugo.io/getting-started/installing/2. 下载跨平台二进版本 下载地址：https://github.com/gohugoio/hugo/releaseshugo_0.54.0_Windows-64bit.ziphugo_extended_0.54.0_Windows-64bit.zip3. 完成安装 hugo version4. 新建一个Hugo网站 建立文件夹cd ./blog">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="RexLiu&#39;s Blog">
+<meta name="twitter:url" content="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/">
+<meta name="twitter:title" content="7.0利用GitHub Pages创建Blog - RexLiu&#39;s Blog">
+<meta name="twitter:description" content="7.0利用GitHub Pages创建Blog 目录 [toc]一、新建一个GitHub库 1. 打开 GitHub Pages官网 User or organization site : 个人或组织网站Project site : 项目网站浏览查看 User or organization site 帮助文档，了解操作步骤。2. 注册并登录GitHub 网址：https://github.com/新建一个GitHub repository ，库名为 username.github.io 。username即为你的 GitHub 账号的 username。类型为 Public选中 Initializa this respository with a README二、安装 Hugo 1. 浏览 Hugo 官方帮助文档 了解自己操作系统对应的必要工具。Hugo 安装指南：https://gohugo.io/getting-started/installing/2. 下载跨平台二进版本 下载地址：https://github.com/gohugoio/hugo/releaseshugo_0.54.0_Windows-64bit.ziphugo_extended_0.54.0_Windows-64bit.zip3. 完成安装 hugo version4. 新建一个Hugo网站 建立文件夹cd ./blog">
+<meta name="twitter:image" content="https://rexliu2018.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://rexliu2018.github.io/"
+    },
+    "headline": "7.0利用GitHub Pages创建Blog - RexLiu&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://rexliu2018.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-02-28T18:01:00JST",
+    "dateModified": "2019-02-28T18:01:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "RexLiu&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RexLiu&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rexliu2018.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "7.0利用GitHub Pages创建Blog 目录 [toc]
+一、新建一个GitHub库 1. 打开 GitHub Pages官网 User or organization site : 个人或组织网站
+Project site : 项目网站
+浏览查看 User or organization site 帮助文档，了解操作步骤。
+2. 注册并登录GitHub 网址：https://github.com/
+新建一个GitHub repository ，库名为 username.github.io 。
+username即为你的 GitHub 账号的 username。
+类型为 Public
+选中 Initializa this respository with a README
+二、安装 Hugo 1. 浏览 Hugo 官方帮助文档 了解自己操作系统对应的必要工具。
+Hugo 安装指南：https://gohugo.io/getting-started/installing/
+2. 下载跨平台二进版本 下载地址：https://github.com/gohugoio/hugo/releases
+hugo_0.54.0_Windows-64bit.zip
+hugo_extended_0.54.0_Windows-64bit.zip
+3. 完成安装 hugo version
+4. 新建一个Hugo网站 建立文件夹
+cd ./blog"
+  }
+</script>
+
+
+    <link href="https://rexliu2018.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://rexliu2018.github.io/">RexLiu&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://rexliu2018.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://rexliu2018.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">7.0利用GitHub Pages创建Blog</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-02-28T18:01:00JST">Feb 28, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://rexliu2018.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">7.0利用GitHub Pages创建Blog</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h1 id="7-0利用github-pages创建blog">7.0利用GitHub Pages创建Blog</h1>
+
+<h2 id="目录">目录</h2>
+
+<p>[toc]</p>
+
+<h2 id="一-新建一个github库">一、新建一个GitHub库</h2>
+
+<h3 id="1-打开-github-pages官网">1.  打开 GitHub Pages官网</h3>
+
+<p>User or organization site : 个人或组织网站<br />
+Project site : 项目网站<br />
+浏览查看 User or organization site 帮助文档，了解操作步骤。</p>
+
+<h3 id="2-注册并登录github">2.  注册并登录GitHub</h3>
+
+<p>网址：<a href="https://github.com/">https://github.com/</a><br />
+新建一个GitHub repository ，库名为 username.github.io 。<br />
+username即为你的 GitHub 账号的 username。<br />
+类型为 Public<br />
+选中 Initializa this respository with a README</p>
+
+<h2 id="二-安装-hugo">二、安装 Hugo</h2>
+
+<h3 id="1-浏览-hugo-官方帮助文档">1. 浏览 Hugo 官方帮助文档</h3>
+
+<p>了解自己操作系统对应的必要工具。<br />
+Hugo 安装指南：<a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
+
+<h3 id="2-下载跨平台二进版本">2. 下载跨平台二进版本</h3>
+
+<p>下载地址：<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a><br />
+hugo_0.54.0_Windows-64bit.zip<br />
+hugo_extended_0.54.0_Windows-64bit.zip</p>
+
+<h3 id="3-完成安装">3. 完成安装</h3>
+
+<p>hugo version</p>
+
+<h3 id="4-新建一个hugo网站">4. 新建一个Hugo网站</h3>
+
+<p>建立文件夹<br />
+cd ./blog<br />
+执行命令新建一个Hugo网站<br />
+hugo new site rex-blog<br />
+&rdquo; rex-blog &ldquo; 是我的网站文件夹名。</p>
+
+<h3 id="5-选择-hugo-主题并克隆至本地目录">5. 选择 Hugo 主题并克隆至本地目录</h3>
+
+<p>打开Hugo Themes页面，选择一个喜欢的主题<br />
+Hugo Themes 网站：<a href="https://themes.gohugo.io">https://themes.gohugo.io</a><br />
+下面以 选择Tranquilpeak 主题为例。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/" class="list-group-item">7.0利用GitHub Pages创建Blog</a>
+      
+      <a href="https://rexliu2018.github.io/post/6.0tomcat9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="list-group-item">6.0Tomcat9安装配置</a>
+      
+      <a href="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/" class="list-group-item">5.0Tomcat和Servlet</a>
+      
+      <a href="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/" class="list-group-item">4.0表格</a>
+      
+      <a href="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/" class="list-group-item">3.0Markdown语法</a>
+      
+      <a href="https://rexliu2018.github.io/post/2.0%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%9C%80%E6%B1%82/" class="list-group-item">2.0数据字典需求</a>
+      
+      <a href="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/" class="list-group-item">1.0接口文档需求</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; RexLiu&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

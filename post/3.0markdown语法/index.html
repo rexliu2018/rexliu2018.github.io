@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+
+<link rel="canonical" href="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>3.0Markdown语法 - RexLiu&#39;s Blog</title>
+    
+<meta name="description" content="3.0Markdown语法 Markdown是一种轻量易写的书写语法。本文是Markdown语法的一个快速指南。目录  语法：md 只需要生成目录的地方，写上&amp;quot;[toc]&amp;quot;即可自动生成目录   [toc]一、什么是Markdown 它通过少量简单的标记字符来格式化文本。您可以用纯文本来书写文档，然后在阅读时呈现一个美观的排版。二、怎么学习 刚开始，懂得标题等基本语法就能够写出基本的文档；然后，每天可以学习一个新的语法并不断练习，每天用 每天用 每天用。三、标题  语法：一般在#后 跟个空格 再写文字。# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题   四、空行 显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行。五、段落 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行。普通段落不该用空格或制表符来缩进。如果需要一个新的段落，您应该先插入一个空行然后才输入新的段落的文本。然后在段落输完后，后面插入一个空行来显式结束该段落元素。一般来说，一个块元素（例如段落、代码块、列表和块引用）前后都要有一个以上的空行。六、换行 如果需要换行，您应该在当前行末尾添加两个空格，然后换行。VNote提供快捷键 Shift&#43;Enter 来辅助用户输入两个空格并换行。七、字体 1. 斜体  语法：用一个 * 包含一段文本 md *斜体字*  显示：斜体字注意在*跟字之间不能加空格。VNote提供快捷键 Ctrl&#43;I 来插入斜体的文本  2.">
+
+<meta property="og:title" content="3.0Markdown语法 - RexLiu&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/">
+<meta property="og:image" content="https://rexliu2018.github.io/images/default.png">
+<meta property="og:site_name" content="RexLiu&#39;s Blog">
+<meta property="og:description" content="3.0Markdown语法 Markdown是一种轻量易写的书写语法。本文是Markdown语法的一个快速指南。目录  语法：md 只需要生成目录的地方，写上&amp;quot;[toc]&amp;quot;即可自动生成目录   [toc]一、什么是Markdown 它通过少量简单的标记字符来格式化文本。您可以用纯文本来书写文档，然后在阅读时呈现一个美观的排版。二、怎么学习 刚开始，懂得标题等基本语法就能够写出基本的文档；然后，每天可以学习一个新的语法并不断练习，每天用 每天用 每天用。三、标题  语法：一般在#后 跟个空格 再写文字。# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题   四、空行 显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行。五、段落 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行。普通段落不该用空格或制表符来缩进。如果需要一个新的段落，您应该先插入一个空行然后才输入新的段落的文本。然后在段落输完后，后面插入一个空行来显式结束该段落元素。一般来说，一个块元素（例如段落、代码块、列表和块引用）前后都要有一个以上的空行。六、换行 如果需要换行，您应该在当前行末尾添加两个空格，然后换行。VNote提供快捷键 Shift&#43;Enter 来辅助用户输入两个空格并换行。七、字体 1. 斜体  语法：用一个 * 包含一段文本 md *斜体字*  显示：斜体字注意在*跟字之间不能加空格。VNote提供快捷键 Ctrl&#43;I 来插入斜体的文本  2.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="RexLiu&#39;s Blog">
+<meta name="twitter:url" content="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/">
+<meta name="twitter:title" content="3.0Markdown语法 - RexLiu&#39;s Blog">
+<meta name="twitter:description" content="3.0Markdown语法 Markdown是一种轻量易写的书写语法。本文是Markdown语法的一个快速指南。目录  语法：md 只需要生成目录的地方，写上&amp;quot;[toc]&amp;quot;即可自动生成目录   [toc]一、什么是Markdown 它通过少量简单的标记字符来格式化文本。您可以用纯文本来书写文档，然后在阅读时呈现一个美观的排版。二、怎么学习 刚开始，懂得标题等基本语法就能够写出基本的文档；然后，每天可以学习一个新的语法并不断练习，每天用 每天用 每天用。三、标题  语法：一般在#后 跟个空格 再写文字。# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题   四、空行 显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行。五、段落 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行。普通段落不该用空格或制表符来缩进。如果需要一个新的段落，您应该先插入一个空行然后才输入新的段落的文本。然后在段落输完后，后面插入一个空行来显式结束该段落元素。一般来说，一个块元素（例如段落、代码块、列表和块引用）前后都要有一个以上的空行。六、换行 如果需要换行，您应该在当前行末尾添加两个空格，然后换行。VNote提供快捷键 Shift&#43;Enter 来辅助用户输入两个空格并换行。七、字体 1. 斜体  语法：用一个 * 包含一段文本 md *斜体字*  显示：斜体字注意在*跟字之间不能加空格。VNote提供快捷键 Ctrl&#43;I 来插入斜体的文本  2.">
+<meta name="twitter:image" content="https://rexliu2018.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://rexliu2018.github.io/"
+    },
+    "headline": "3.0Markdown语法 - RexLiu&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://rexliu2018.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-02-24T18:01:00JST",
+    "dateModified": "2019-02-24T18:01:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "RexLiu&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RexLiu&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rexliu2018.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "3.0Markdown语法 Markdown是一种轻量易写的书写语法。
+本文是Markdown语法的一个快速指南。
+目录  语法：
+md 只需要生成目录的地方，写上&quot;[toc]&quot;即可自动生成目录 
+  [toc]
+一、什么是Markdown 它通过少量简单的标记字符来格式化文本。
+您可以用纯文本来书写文档，然后在阅读时呈现一个美观的排版。
+二、怎么学习 刚开始，懂得标题等基本语法就能够写出基本的文档；
+然后，每天可以学习一个新的语法并不断练习，每天用 每天用 每天用。
+三、标题  语法：一般在#后 跟个空格 再写文字。
+# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题   四、空行 显示上看起来像是空的，便会被视为空行。
+比方说，若某一行只包含空格和制表符，则该行也会被视为空行。
+五、段落 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行。
+普通段落不该用空格或制表符来缩进。
+如果需要一个新的段落，您应该先插入一个空行然后才输入新的段落的文本。
+然后在段落输完后，后面插入一个空行来显式结束该段落元素。
+一般来说，一个块元素（例如段落、代码块、列表和块引用）前后都要有一个以上的空行。
+六、换行 如果需要换行，您应该在当前行末尾添加两个空格，然后换行。
+VNote提供快捷键 Shift+Enter 来辅助用户输入两个空格并换行。
+七、字体 1. 斜体  语法：用一个 * 包含一段文本 md *斜体字*  显示：斜体字
+注意在*跟字之间不能加空格。
+VNote提供快捷键 Ctrl+I 来插入斜体的文本
+  2."
+  }
+</script>
+
+
+    <link href="https://rexliu2018.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://rexliu2018.github.io/">RexLiu&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://rexliu2018.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://rexliu2018.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">3.0Markdown语法</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-02-24T18:01:00JST">Feb 24, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://rexliu2018.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">3.0Markdown语法</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h1 id="3-0markdown语法">3.0Markdown语法</h1>
+
+<p>Markdown是一种轻量易写的书写语法。<br />
+本文是Markdown语法的一个快速指南。</p>
+
+<h2 id="目录">目录</h2>
+
+<ul>
+<li>语法：<br />
+<code>md    
+只需要生成目录的地方，写上&quot;[toc]&quot;即可自动生成目录  
+</code><br />
+<br /></li>
+</ul>
+
+<p>[toc]</p>
+
+<h2 id="一-什么是markdown">一、什么是Markdown</h2>
+
+<p>它通过少量简单的标记字符来格式化文本。<br />
+您可以用纯文本来书写文档，然后在阅读时呈现一个美观的排版。</p>
+
+<h2 id="二-怎么学习">二、怎么学习</h2>
+
+<p>刚开始，懂得标题等基本语法就能够写出基本的文档；<br />
+然后，每天可以学习一个新的语法并不断练习，<strong>每天用 每天用 每天用</strong>。</p>
+
+<h2 id="三-标题">三、标题</h2>
+
+<ul>
+<li><p>语法：一般在#后 跟个空格 再写文字。</p>
+
+<pre><code class="language-md"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre></li>
+</ul>
+
+<h2 id="四-空行">四、空行</h2>
+
+<p>显示上看起来像是空的，便会被视为空行。<br />
+比方说，若某一行只包含空格和制表符，则该行也会被视为空行。</p>
+
+<h2 id="五-段落">五、段落</h2>
+
+<p>段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行。<br />
+普通段落不该用空格或制表符来缩进。<br />
+如果需要一个新的段落，您应该先插入一个空行然后才输入新的段落的文本。<br />
+然后在段落输完后，后面插入一个空行来显式结束该段落元素。<br />
+一般来说，一个块元素（例如段落、代码块、列表和块引用）前后都要有一个以上的空行。</p>
+
+<h2 id="六-换行">六、换行</h2>
+
+<p>如果需要换行，您应该在当前行末尾添加两个空格，然后换行。<br />
+VNote提供快捷键 <strong>Shift+Enter</strong> 来辅助用户输入两个空格并换行。</p>
+
+<h2 id="七-字体">七、字体</h2>
+
+<h3 id="1-斜体">1. 斜体</h3>
+
+<ul>
+<li>语法：用一个 * 包含一段文本
+<code>md
+*斜体字*
+</code></li>
+<li>显示：<em>斜体字</em><br />
+注意在<code>*</code>跟字之间不能加空格。<br />
+VNote提供快捷键 <strong>Ctrl+I</strong> 来插入斜体的文本<br />
+<br /></li>
+</ul>
+
+<h3 id="2-加粗">2. 加粗</h3>
+
+<ul>
+<li>语法：用两个 * 包含一段文本<br />
+<code>md
+**加粗字**
+</code></li>
+
+<li><p>显示：<strong>加粗字</strong><br />
+VNote提供快捷键 <strong>Ctrl+B</strong> 来插入加粗的文本</p>
+
+<h3 id="3-斜体加粗">3. 斜体加粗</h3></li>
+
+<li><p>语法：用三个 * 包含一段文本</p>
+
+<pre><code class="language-md">***斜体加粗字***  
+</code></pre></li>
+
+<li><p>显示：<strong><em>斜体加粗字</em></strong></p>
+
+<h3 id="4-删除文本">4.删除文本</h3></li>
+
+<li><p>语法：用两个 <code>~</code> 包含一段文本</p>
+
+<pre><code class="language-md">~~删除线字~~
+</code></pre></li>
+
+<li><p>显示：  <del>删除线字</del><br />
+注意在<code>~</code>跟字之间不能加空格。<br />
+VNote提供快捷键 <strong>Ctrl+D</strong> 来插入带有删除线的文本</p>
+
+<h2 id="八-引用">八、引用</h2></li>
+
+<li><p>语法：在引用的 文字或段落 前加 <code>&gt;</code><br />
+引用可以嵌套，比如加两个 <code>&gt;&gt;</code> 或者 三个 <code>&gt;&gt;&gt;</code><br />
+N个 貌似可以一直加下去，但是没有神马卵用。</p>
+
+<pre><code class="language-md">&gt; 这是引用的内容
+&gt;&gt; 这是引用的内容
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 这是引用的内容
+</code></pre></li>
+
+<li><p>显示：<br />
+&gt; 这是引用的内容<br />
+&gt;&gt; 这是引用的内容<br />
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 这是引用的内容</p></li>
+</ul>
+
+<h2 id="九-分割线">九、分割线</h2>
+
+<ul>
+<li><p>语法：另起一行，连续输入 三个 <code>-</code> 即可 分割两段文字内容。<br />
+&gt; ---</p></li>
+
+<li><p>显示:</p></li>
+</ul>
+
+<hr />
+
+<h2 id="十-图片">十、图片</h2>
+
+<ul>
+<li>语法：<br />
+<code>md
+![图片Alt文本](图片地址 &quot;图片Title文本&quot;)  
+</code><br />
+图片Alt文本    图片的替代文字，相当于对图片内容的解释，在图片展示不了时显示此文本。<br />
+图片Title文本  图片的标题，当鼠标移到图片上时显示的内容。Title可加可不加。<br /></li>
+
+<li><p>显示：<br />
+<img src="https://avatar.csdn.net/7/7/B/1_ralf_hx163com.jpg" alt="图片Alt文本" title="图片Title文本" /></p>
+
+<h2 id="十一-超链接">十一、超链接</h2>
+
+<h3 id="1-链接">1. 链接</h3></li>
+
+<li><p>语法：</p>
+
+<pre><code class="language-md">[超链接显示名](超链接地址 &quot;超链接描述Title鼠标悬停弹出&quot;)    
+[百度](http://www.baidu.com/ &quot;Title&quot;)
+</code></pre>
+
+<p>Title 可加可不加<br />
+Markdown本身语法不支持链接在新页面中打开，如果有需求可以用a标签代替。</p></li>
+
+<li><p>显示：<br />
+<a href="http://www.baidu.com/" title="超链接描述Title鼠标悬停弹出">百度</a></p>
+
+<h3 id="2-自动链接">2.自动链接</h3></li>
+
+<li><p>语法：<br />
+将链接Url用 方括号 包起来</p>
+
+<pre><code class="language-md">&lt;http://www.baidu.com/&gt;  
+Markdown 会转为：
+&lt;a href=&quot;http://www.baidu.com/&quot;&gt;http://www.baidu.com/&lt;/a&gt;  
+</code></pre></li>
+
+<li><p>显示：<br />
+<a href="http://www.baidu.com/">http://www.baidu.com/</a></p></li>
+</ul>
+
+<h2 id="十二-列表">十二、列表</h2>
+
+<h3 id="1-无序列表">1. 无序列表</h3>
+
+<p>无序列表 用 -  * +任何一种都可以。<br />
+建议 - 加空格 加内容<br />
+多级嵌套：上一级 和 下一级 之间 敲三个空格即可<br />
+- 语法:<br />
+&gt;- Item01<br />
+&gt;- Item02<br />
+&gt;- Item03</p>
+
+<ul>
+<li>显示：<br />
+
+<ul>
+<li>Item01<br /></li>
+<li>Item02<br /></li>
+<li>Item03<br /></li>
+</ul></li>
+<li>多级嵌套<br />
+显示  ：</li>
+<li>Item 1<br /></li>
+<li>Item 2<br />
+
+<ul>
+<li>Item 2a<br />
+
+<ul>
+<li>Item 2aa<br />
+
+<ul>
+<li>Item 2aaa</li>
+</ul></li>
+</ul></li>
+<li>Item 2b<br /></li>
+</ul></li>
+
+<li><p>Item 3</p>
+
+<h3 id="2-有序列表">2. 有序列表</h3>
+
+<p>数字序号加点 加空格 加内容，<br />
+序号其实是无关紧要的，渲染时Markdown会自动修改该序号。</p></li>
+
+<li><p>语法：<br />
+```md</p></li>
+
+<li><p>列表内容</p>
+
+<ol>
+<li>列表内容子内容<br /></li>
+<li>列表内容子内容<br /></li>
+<li>列表内容子内容</li>
+</ol></li>
+
+<li><p>列表内容</p></li>
+
+<li><p>列表内容
+```</p></li>
+
+<li><p>显示：</p></li>
+
+<li><p>列表内容</p>
+
+<ol>
+<li>列表内容子内容<br /></li>
+<li>列表内容子内容<br /></li>
+<li>列表内容子内容</li>
+</ol></li>
+
+<li><p>列表内容</p></li>
+
+<li><p>列表内容</p>
+
+<h2 id="十三-代码">十三、 代码</h2>
+
+<h3 id="1-单行代码">1. 单行代码</h3>
+
+<p>代码之间分别用一个反引号包起来</p></li>
+
+<li><p>语法：
+&gt; `内联单行代码`</p></li>
+
+<li><p>显示：<br />
+展示 <code>内联单行代码</code>。</p>
+
+<h3 id="2-代码块">2. 代码块</h3>
+
+<p>代码块 前后分别用三个 ``` 符号 包起来即可<br />
+代码块前后的反引号要单独占一行<br />
+代码块 前反引号 后指定语言，代码块 语法高亮</p></li>
+
+<li><p>语法：<br />
+```javascript<br />
+var num = 0;<br />
+for (var i = 0; i &lt; 5; i++) {<br />
+ num+=i;<br />
+}<br />
+console.log(num);<br />
+```</p></li>
+
+<li><p>显示：</p></li>
+</ul>
+
+<pre><code class="language-javascript">    var num = 0;  
+    for (var i = 0; i &lt; 5; i++) {  
+    num+=i;  
+    }  
+    console.log(num);  
+</code></pre>
+
+<h2 id="十四-表格">十四、表格</h2>
+
+<p>表头+表分割线+表数据 即可生成一个表<br />
+第二行 表分割线 分割表头和表数据<br />
+- 语法：</p>
+
+<pre><code class="language-md">表一：
+| col 1 | col 2 | col 3 |
+| ---------- | ---------- | -------- |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+</code></pre>
+
+<p>有一个<code>-</code>就行，为了 对齐，多加了几个，注意中间必须连贯不能有空格。<br />
+表数据文字 默认居左对齐<br />
+<code>-</code> 两边加<code>:</code> 表示文字居中<br />
+<code>-</code> 右边加<code>:</code> 表示文字居右<br />
+<code>-</code> 左边加<code>:</code> 表示文字居左</p>
+
+<pre><code class="language-md">表二：  
+|字段|类型|空|默认|注释|
+|:----    |:-------    |:--- |---|------      |
+|uid    |int(10)     |否 |  |             |
+|username |varchar(20) |否 |    |   用户名  |
+|password |varchar(50) |否   |    |   密码    |
+|name     |varchar(15) |是   |    |    昵称     |
+|reg_time |int(11)     |否   | 0  |   注册时间  |
+</code></pre>
+
+<ul>
+<li>显示：<br />
+表一：<br />
+<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>col 1</th>
+<th>col 2</th>
+<th>col 3</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cell1</td>
+<td>cell2</td>
+<td>cell3cell3cell3cell3cell3cell3cell3</td>
+</tr>
+
+<tr>
+<td>cell4</td>
+<td>cell5</td>
+<td>cell6</td>
+</tr>
+</tbody>
+</table>
+
+<p>表二：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">字段</th>
+<th align="left">类型</th>
+<th align="left">空</th>
+<th>默认</th>
+<th>注释</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="left">int(10)</td>
+<td align="left">否</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">username</td>
+<td align="left">varchar(20)</td>
+<td align="left">否</td>
+<td></td>
+<td>用户名</td>
+</tr>
+
+<tr>
+<td align="left">password</td>
+<td align="left">varchar(50)</td>
+<td align="left">否</td>
+<td></td>
+<td>密码</td>
+</tr>
+
+<tr>
+<td align="left">name</td>
+<td align="left">varchar(15)</td>
+<td align="left">是</td>
+<td></td>
+<td>昵称</td>
+</tr>
+
+<tr>
+<td align="left">reg_time</td>
+<td align="left">int(11)</td>
+<td align="left">否</td>
+<td>0</td>
+<td>注册时间</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://rexliu2018.github.io/post/7.0%E5%88%A9%E7%94%A8github-pages%E5%88%9B%E5%BB%BAblog/" class="list-group-item">7.0利用GitHub Pages创建Blog</a>
+      
+      <a href="https://rexliu2018.github.io/post/6.0tomcat9%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="list-group-item">6.0Tomcat9安装配置</a>
+      
+      <a href="https://rexliu2018.github.io/post/5.0tomcat%E5%92%8Cservlet/" class="list-group-item">5.0Tomcat和Servlet</a>
+      
+      <a href="https://rexliu2018.github.io/post/4.0%E8%A1%A8%E6%A0%BC/" class="list-group-item">4.0表格</a>
+      
+      <a href="https://rexliu2018.github.io/post/3.0markdown%E8%AF%AD%E6%B3%95/" class="list-group-item">3.0Markdown语法</a>
+      
+      <a href="https://rexliu2018.github.io/post/2.0%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%9C%80%E6%B1%82/" class="list-group-item">2.0数据字典需求</a>
+      
+      <a href="https://rexliu2018.github.io/post/1.0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E9%9C%80%E6%B1%82/" class="list-group-item">1.0接口文档需求</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; RexLiu&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
